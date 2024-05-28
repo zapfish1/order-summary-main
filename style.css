@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+button {
+  all: unset;
+  display: block;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center center;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-pale-blue: hsl(225, 100%, 94%);
+  --color-bright-blue: hsl(245, 75%, 52%);
+  --color-hover-purple: hsl(245, 64%, 58%);
+  --color-very-pale-blue: hsl(225, 100%, 98%);
+  --color-desaturated-blue: hsl(224, 23%, 55%);
+  --color-transparent-pale-blue: hsla(225, 100%, 94%, 0.553);
+  --color-dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--color-pale-blue);
+  color: var(--color-dark-blue);
+  background-image: url(images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+main {
+  background-color: var(--color-very-pale-blue);
+  border-radius: 1rem;
+  width: 375px;
+  text-align: center;
+}
+
+img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+article {
+  padding: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+article h1 {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+article p {
+  font-weight: 500;
+  color: var(--color-desaturated-blue);
+
+  line-height: 1.5rem;
+}
+
+article a {
+  color: var(--color-bright-blue);
+  font-weight: 700;
+}
+
+article button:first-of-type {
+  font-weight: 700;
+  background-color: var(--color-bright-blue);
+  color: var(--color-pale-blue);
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  width: 100%;
+
+  box-shadow: 0px 25px 25px 0px var(--color-pale-blue);
+}
+
+article button:first-of-type:hover {
+  background-color: var(--color-hover-purple);
+  transition: all 0.3s ease-in-out;
+}
+
+article button:last-of-type {
+  font-weight: 700;
+  color: var(--color-desaturated-blue);
+  padding-bottom: 0.8rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+article button:last-of-type:hover {
+  color: var(--color-dark-blue);
+  transition: all 0.3s ease-in-out;
+}
+
+.annual-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--color-transparent-pale-blue);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.annual-plan span {
+  color: var(--color-dark-blue);
+  font-weight: 700;
+  text-align: left;
+}
+.annual-plan a:hover {
+  color: var(--color-hover-purple);
+  transition: all 0.3s ease-in-out;
+}
+
+.annual-plan .icon-text {
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media screen and (min-width: 650px) {
+  html {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: contain;
+  }
+}
